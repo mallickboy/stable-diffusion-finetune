@@ -87,10 +87,11 @@ All comparisons and inference outputs are available in the shared Drive folder a
 
 ---
 ## Some Visuals
-
-![Image](https://github.com/user-attachments/assets/ef9f90d5-e2c6-4d0a-8b51-48c2c82c5e45)
-
+***Base VS 1024 Model***
 ![Image](https://github.com/user-attachments/assets/6222abcd-b77b-4c05-b549-a84e254691b9)
+
+***1024 Model VS 256 Model***
+![Image](https://github.com/user-attachments/assets/ef9f90d5-e2c6-4d0a-8b51-48c2c82c5e45)
 
 
 ## Notes
