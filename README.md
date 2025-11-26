@@ -16,8 +16,18 @@ This project fine-tunes **Stable Diffusion XL Base 1.0** using **LoRA** adapters
 
 ## High-Level Idea
 
-**LoRA (Low-Rank Adaptation)** fine-tunes only small adapter matrices instead of updating all model weights.  
-This drastically reduces GPU memory use and training time — perfect for a **T4 (16 GB)** Colab environment.
+Stable Diffusion is made of several parts that work together:
+
+| Component | Purpose | Type |
+|------------|----------|------|
+| **VAE (Variational Autoencoder)** | Turns images into smaller latent codes and back. | Autoencoder (CNN) |
+| **U-Net (Denoiser)** | Learns to remove noise and form the final image. | UNet2DConditionModel |
+| **Text Encoder** | Converts text prompts into embeddings that guide the image. | CLIP Encoder |
+| **Scheduler** | Controls how noise is reduced step by step. | DDIM, Euler, etc. |
+
+During fine-tuning, only some layers of the **U-Net** are updated using **LoRA (Low-Rank Adaptation)**.  
+LoRA adds small trainable matrices inside attention layers, keeping the main model frozen.  
+This makes training light and fast & perfect for a free-tier **T4 GPU (16 GB)**.
 
 ---
 
