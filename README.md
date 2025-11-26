@@ -12,6 +12,11 @@ This project fine-tunes **Stable Diffusion XL Base 1.0** using **LoRA** adapters
 | 256 px Model | [Google Drive](https://drive.google.com/drive/folders/1wqJb4Xo0R5nVFMrxCPTCQvhIiGBDUenx?usp=sharing) |
 | Inference & Comparisons | [Google Drive](https://drive.google.com/drive/folders/1etQR-2ir_iUklRpibzzWU6NaDlqKGep4?usp=sharing) |
 
+## Online Notebooks
+- Training Notebook : [Google Colab](https://colab.research.google.com/drive/1GY70kcaXAfTQQfo_kS8Ujtvjd7qpYhlF?usp=sharing) 
+- Inference Notebook : [Google Colab](https://colab.research.google.com/drive/1q6uVpPRkKZvDl9WeOUA1vjXwV0u1YtB_?usp=sharing) 
+
+
 ---
 
 ## High-Level Idea
