@@ -25,9 +25,9 @@ Stable Diffusion is made of several parts that work together:
 | **Text Encoder** | Converts text prompts into embeddings that guide the image. | CLIP Encoder |
 | **Scheduler** | Controls how noise is reduced step by step. | DDIM, Euler, etc. |
 
-During fine-tuning, only some layers of the **U-Net** are updated using **LoRA (Low-Rank Adaptation)**.  
-LoRA adds small trainable matrices inside attention layers, keeping the main model frozen.  
-This makes training light and fast & perfect for a free-tier **T4 GPU (16 GB)**.
+We only train a few layers of the U-Net using **LoRA (Low-Rank Adaptation)**.  
+LoRA adds small trainable matrices inside the attention layers while keeping the main model frozen.  
+This keeps the training lightweight and fast, which worked perfectly on a free-tier **T4 GPU (16 GB)**.
 
 ---
 
